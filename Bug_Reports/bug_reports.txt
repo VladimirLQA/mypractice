@@ -1,0 +1,133 @@
+Identifier:	1.01
+
+Summary: Form "Registration" field "Last Name" validation error when we enter 21 character 
+
+Severity:
+
+Priority:
+
+Environment:
+
+Precondition:
+Opened page ............
+
+STR: 
+	1. Click on the button "Sign up"
+	2. Field "Name" input "example"
+	3. Field "Last name" input "exampleexampleexample" (21 characters)
+	4. Click on the field "Email" 
+
+Result: 
+We continue registration
+
+Expected result:
+The "Last name" field frame shoud be highlighted in red and pop up an error: "Last name has to be from 2 to 20 characters long"
+
+Attachments:
+
+Reproducibility:
+
+Workaround:
+
+=========================================================
+
+Identifier:	1.02
+
+Summary: Error message is not displayed at the "Add an expense" popup on "Fuel expense" page when we add the same "Mileage" if it already exists
+ 
+
+Severity:
+
+Priority:
+
+Environment:
+
+Precondition:
+Opened page ................ and logged in user, 
+Already added at least one expense to car 
+
+STR: 
+	1. Click on the button "Fuel expenses"
+	2. Click on the button "Add an expense"
+	3. Enter into fild "Mileage" - the same mileage of the previous expense
+	4. Enter into filds ("Number of liters", "Total cost") value (5, 5) 
+	5. Click on the button "Add"
+
+Result: 
+A red box with no message is displayed at the top of the "Add Expense" popup.
+
+Expected result:
+Should be displayed an error message "New mileage must not be less or equal to previous expense value is 'your previous mileage' " at the top of the "Add Expense" popup 
+
+Attachments:
+
+Reproducibility:
+
+Workaround:
+
+=========================================================
+
+Identifier:	1.03
+
+Summary: Error in the CSS related to the "Name" field in "Edit profile" popup
+ 
+
+Severity:
+
+Priority:
+
+Environment:
+
+Precondition:
+Opened page ............... and logged in user
+
+STR: 
+	1. Click on the button "Profile"
+	2. Click on the button "Edit profile"
+
+Result: 
+The "Name" field is out of frame "Edit profile" popup
+
+Expected result:
+The "Name" field is in of frame "Edit profile" popup
+
+Attachments:
+
+Reproducibility:
+
+Workaround:
+
+=========================================================
+
+Identifier:	1.04
+
+Summary: Invalid link of "Settings" button to move to settings at the Dropdown list of "My profile" button when we click on it
+
+Severity:
+
+Priority:
+
+Environment:
+
+Precondition:
+Opened page ............... and logged in user
+
+
+STR: 
+	1. Click on the button "My profile" at the top-right corner
+	2. Click on the button " Settings"
+
+
+Result: 
+User is redirected to "https://................/404" page
+
+Expected result:
+User is redirecte to "https://................../panel/settings" page
+
+Attachments:
+
+Reproducibility:
+
+Workaround:
+
+
