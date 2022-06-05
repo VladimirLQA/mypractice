@@ -1,0 +1,17 @@
+{"bug_report" : {"Identifier": 1.02,
+                "Summary" : "Error message is not displayed at the \"Add an expense\" popup on \"Fuel expense\" page when we add the same \"Mileage\" if it already exists",
+                "Severity" : "Minor",
+                "Priority" : "P3",
+                "Environment" : "Windows 10, Google Chrome v.103.23",
+                "Precondition" : "Opened page ................ and logged in user, Already added at least one expense to car",
+                "STR" : 
+	                    { "1." : "Click on the button \"Fuel expenses\"",
+	                    "2." : "Click on the button \"Add an expense\"",
+	                    "3." : "Enter into fild \"Mileage\" - the same mileage of the previous expense",
+                    	"4." : "Enter into filds (\"Number of liters\",\"Total cost\") value (5,5)",
+	                    "5." : "Click on the button \"Add\"" },
+                "Result" : "A red box with no message is displayed at the top of the \"Add Expense\" popup.",
+                "Expected result" : "Should be displayed an error message \"New mileage must not be less or equal to previous expense value is 'your previous mileage' \" at the top of the \"Add Expense\" popup",
+                "Attachments" : null,
+                "Reproducibility" : null,
+                "Workaround" : null } }
