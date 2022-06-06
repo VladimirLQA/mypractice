@@ -1,0 +1,134 @@
+Identifier: TC1
+
+Priority: P0
+
+Module: Registration pop up
+
+Preconditions: Opened page ................
+
+Summary: New user registration
+
+Steps:
+	1. Click on button "Sign in"
+	2. Click on button "Registration"
+	3. Enter into ("Name", "Last name", "Email", "Password", "Re-enter password") 
+	values ("Anatoliy", "Ignatenko", "inka@gmail.com" (e.g.), "12345678Aa", "12345678Aa")
+	4. Click on button "Register"
+
+Expected results:
+	
+	1. Opened "Log in pop up "
+	2. Opened "Registration pop up"
+	3. Data is displayed in the fields
+	4. User redirected to "User garage" page	
+
+Status: Pass
+
+===========================================================================
+
+Identifier: TC2
+
+Priority: P2
+
+Module: Registration pop up
+
+Preconditions: Opened page ................
+
+Summary: New user registration
+
+Steps:
+	1. Click on button "Sign in"
+	2. Click on button "Registration"
+	3. Input in "Name" field: "A"  (eng)
+	4. Click on "Last name" field
+
+Expected results:
+	
+	1. Opened "Log in pop up "
+	2. Opened "Registration pop up"
+	3. "A" is displayed in the "Name" field
+	4. Error notification: "Name has to be from 2 to 20 characters long"
+
+Status: Pass
+
+===========================================================================
+
+Identifier: TC3
+
+Priority: P2
+
+Module: Registration pop up
+
+Preconditions: Opened page ................
+
+Summary: New user registration
+
+Steps:
+	1.Click on button "Sign in"
+	2. Click on button "Registration"
+	3. Enter into ("Name", "Last name", "Email", "Password", ) 
+	values ("Anatoliy", "Ignatenko", "inka@gmail.com" (e.g.), "12345Aa")
+	4. Click on "Re-enter password" field
+
+Expected results:
+	
+	1. Opened "Log in pop up "
+	2. Opened "Registration pop up"
+	3. Data is displayed in fields
+	4. Error notification: "Password has to be from 8 to 15 characters long and contain at least one integer,
+	one capital, and one small letter"
+
+Status: Pass
+
+===========================================================================
+
+Identifier: TC4
+
+Priority: P2
+
+Module: Registration pop up
+
+Preconditions: Opened page ................
+
+Summary: New user registration
+
+Steps:
+	1. Click on button "Sign in"
+	2. Click on button "Registration"
+	3. Enter into ("Name", "Last name") values ("Anatoliy", "Kkkkkkkkkkkkkkkkkkkkk" (21 symbols))
+
+Expected results:
+	
+	1. Opened "Log in pop up "
+	2. Opened "Registration pop up"
+	3. Error notification: "Last name has to be from 2 to 20 characters long"
+
+Status: Fail
+
+===========================================================================
+
+Identifier: TC5
+
+Priority: P2
+
+Module: Registration pop up
+
+Preconditions: Opened page ................
+
+Summary: New user registration
+
+Steps:
+	1.Click on button "Sign in"
+	2. Click on button "Registration"
+	3. Enter into ("Name", "Last name", "Email", "Password", "Re-enter password") 
+	values ("Anatoliy", "Ignatenko", "1@mail.cc" (e.g.), "1234567890123Aa", "1234567890123Aa" (15 symbols))
+	4. Click on the button "Register"
+
+Expected results:
+	
+	1. Opened "Log in pop up "
+	2. Opened "Registration pop up"
+	3. Data is displayed in the fields
+	4. User redirected to "User garage" page
+
+Status: Pass
