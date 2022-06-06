@@ -23,7 +23,7 @@ We continue registration
 Expected result:
 The "Last name" field frame shoud be highlighted in red and pop up an error: "Last name has to be from 2 to 20 characters long"
 
-Attachments:
+Attachments: screenshot
 
 Reproducibility:
 
@@ -59,7 +59,7 @@ A red box with no message is displayed at the top of the "Add Expense" popup.
 Expected result:
 Should be displayed an error message "New mileage must not be less or equal to previous expense value is 'your previous mileage' " at the top of the "Add Expense" popup 
 
-Attachments:
+Attachments: screenshot
 
 Reproducibility:
 
@@ -91,7 +91,7 @@ The "Name" field is out of frame "Edit profile" popup
 Expected result:
 The "Name" field is in of frame "Edit profile" popup
 
-Attachments:
+Attachments: screenshot
 
 Reproducibility:
 
@@ -124,10 +124,74 @@ User is redirected to "https://................/404" page
 Expected result:
 User is redirecte to "https://................../panel/settings" page
 
-Attachments:
+Attachments: screenshot
 
 Reproducibility:
 
 Workaround:
 
+===========================================================================
 
+Identifier:	1 (02.2022)
+
+Summary: Section 'Seo promotion': Client logos aren't displayed while 'Our clients' slider dragging.
+
+Severity: Minor
+
+Priority: Medium
+
+Environment: Microsoft Windows v.10.0.18362.1256, Google Chrome v. 98.0.4758.82
+
+Precondition: Opened page https://askerweb.by/
+
+
+STR: 
+
+	1. Click on the link "SEO Promotion"
+	2. Scroll to list "Outr clients"
+	3. Hold the left mouse button on the list of clients and drag left / right
+
+Result: 
+Logos of clients is invisible
+
+Expected result:
+Inscription 'Our Clients' with checkbox is displayed in the logo block.
+
+Attachments: screenshot
+
+Reproducibility:
+
+Workaround:
+
+===========================================================================
+
+Identifier:	2 (02.2022)
+
+Summary: "Lany - Dancing in the kitchen" link doesn't redirect to page with chords of song when click on it on page "Practice music" in "GUITAA song library" list
+
+Severity: Medium
+
+Priority: Medium
+
+Environment: Microsoft Windows v.10.0.18362.1256, Google Chrome v. 98.0.4758.82
+
+Precondition: Opened page https://guitaa.com/
+
+
+STR: 
+
+	1. Click on the link "Practice Music"
+	2. Scrooll to "GUITAA song library"
+	3. Click on the image https://prnt.sc/26uftxc
+
+Result: 
+Redirected to "Symfony exception" page with error  https://prnt.sc/26ufu61
+
+Expected result:
+Redirected to page with chords of song
+
+Attachments: https://prnt.sc/26ufu61 ; https://prnt.sc/26uftxc
+
+Reproducibility: 
+
+Workaround:
