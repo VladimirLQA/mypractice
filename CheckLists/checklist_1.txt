@@ -1,5 +1,31 @@
 Create an account
 
+Positive cases:
+	Registration:
+		Full name (1 character), Mail (valid format), Password (8 characters)
+		Full name (15 characters), Mail (valid format), Password (40 characters)
+		Full name (100 characters), Mail (valid format), Password (72 characters)
+		‘Eye’ button show/hide password
+	Extra buttons for registration:
+		Registration via additional services: Google, Facebook
+		Registration through the button “Sign up with your organization”(valid data)
+
+	Reference links:
+		Functionality of the links  (“Terms of Service and Privacy Notice’’,”Learner help center”, “Privacy Policy and Terms of Service”)
+
+
+Negative cases:
+	Registration:
+		Registration with the credentials of an already registered user
+		Empty fields
+		Only spaces when filling in fields
+		Full name (15 characters), Mail (valid format), Password (7 characters)
+		Full name (15 character), Mail (already registered), Password (11 characters)
+		Full name (empty), Mail (valid format), Password (11 characters)
+		Full name (15 characters), Mail (empty), Password (11 characters)
+
+=====================================================================
+
 Позитивные кейсы:
 	Регистрация:
 		ФИО (1 знак), Почта (валидный формат), Пароль (8 знаков)
@@ -24,28 +50,5 @@ Create an account
 		ФИО (пусто), Почта (валидный формат), Пароль (15 знаков)
 		ФИО (15 знаков), Почта (пусто), Пароль (10 знаков)
 
-=====================================================================
-
-Positive cases:
-	Registration:
-		Full name (1 character), Mail (valid format), Password (8 characters)
-		Full name (15 characters), Mail (valid format), Password (40 characters)
-		Full name (100 characters), Mail (valid format), Password (72 characters)
-		‘Eye’ button show/hide password
-	Extra buttons for registration:
-		Registration via additional services: Google, Facebook
-		Registration through the button “Sign up with your organization”(valid data)
-
-	Reference links:
-		Functionality of the links  (“Terms of Service and Privacy Notice’’,”Learner help center”, “Privacy Policy and Terms of Service”)
 
 
-Negative cases:
-	Registration:
-		Registration with the credentials of an already registered user
-		Empty fields
-		Only spaces when filling in fields
-		Full name (15 characters), Mail (valid format), Password (7 characters)
-		Full name (15 character), Mail (already registered), Password (11 characters)
-		Full name (empty), Mail (valid format), Password (11 characters)
-		Full name (15 characters), Mail (empty), Password (11 characters)
