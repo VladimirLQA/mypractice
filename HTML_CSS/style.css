@@ -1,0 +1,119 @@
+body {
+	margin: 0;
+}
+/* for main page */
+.container {
+	height: 780px;
+	width: 780px;
+	box-shadow : 1px 1px 7px 4px rgba(0, 0, 0, 0.2);
+	margin: 1% 20% 1% 20%;
+}
+/* for top part of the page */
+.header {
+	height: 200px;
+	display: flex;
+	justify-content: space-around;
+}
+.photo {
+	margin-top: 10px;
+	width: 30%;
+	height: 110%;
+	display: flex;
+	margin-right: px;
+	
+
+}
+.ph {
+	display: flex;
+	width: 110%;
+}
+.short_info {
+	margin-top: -18px;
+	width: 65%;
+	height: 110%;
+}
+.age {
+	margin-top: -27px;
+
+}
+.phone {
+	margin: -1px;
+}
+.mail {
+	margin: -1px;
+}
+/* Position */
+.position_salary {
+	margin-top: 5%;
+	margin-left: 1%;
+}
+.headline {
+	margin-left: 7px;
+	color: lightgray;
+}
+.main_hr {
+	border: none;
+	background-color: lightgray;
+	height: 2px;
+	width: 98%;
+	margin-left: 7px;
+	margin-top: -20px;
+	
+}
+.position_name {
+	margin-left: 7px;
+	margin-top: -5px;
+}
+.position_informarion {
+	margin-top: -10px;
+	margin-left: 7px;
+}
+/* Education */
+.education {
+	margin-left: 1%;
+}
+.education_1 {
+	display: flex;
+}
+.education_date {
+	margin-left: 7px;
+}
+.education_place {
+	padding-left: 20px;
+}
+/* Proffesional development */
+.prof_dev {
+	margin-left: 1%;
+}
+.prof_dev_1 {
+	display: flex;
+}
+.prof_dev_courses {
+	padding-left: 27px;
+}
+.prof_dev_date {
+	margin-left: 7px;
+}
+/* Skills */
+.skill {
+	margin-left: 1%;
+}
+.skill_1 {
+	display: flex;
+}
+.hard_list {
+	margin-top: -2%;
+}
+.des_lang {
+	margin-left: 7px;
+	color: lightgray;	
+}
+/* Languages */
+.language {
+	margin-top: -30px;
+	margin-left: 1%;
+}
+.language_pos {
+	padding-left: 20px;
+	margin-top: -1%;
+}
