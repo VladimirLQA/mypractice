@@ -13,7 +13,7 @@
 
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
 	git checkout Bag_reports
-	cat > structureOfBugReports.txt	/* после каждой строчки ставим enter,						чтобы сохранился текст */
+	cat > structureOfBugReports.txt	/* после каждой строчки ставим enter, чтобы сохранился текст */
 	Identifier:
 	Summary: 
 	Severity:
@@ -60,7 +60,7 @@
 		Field validation
 		Subscribe
 		Delete account
-	CTRL + C/D  // or C, or D //
+	CTRL + C/D  /* or C, or D */
 	
 8. Запушить структуру на внешний репозиторий
 	git add checkliststr.txt
