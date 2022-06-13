@@ -143,7 +143,7 @@
 	grep -rh "sec" . >> new_file.txt 
 
  39. Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово “sec”
-	grep -rw "sec" | xargs rm -vf *.txt 
+	grep -rlw sec | xargs rm -v
 
  40. Просто вывести в терминал строку “Good job!!”
 	echo 'Good job!!'
