@@ -1,0 +1,8 @@
+!#/bin/bash
+cd folder_4
+mkdir soft_1 soft_2 soft_3
+cd soft_1
+touch file1.txt file2.txt file3.txt fil1.json fil2.json
+mkdir papka_1 papka_2 papka_3
+ls -l
+mv file1.txt file2.txt papka_1
