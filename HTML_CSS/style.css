@@ -1,9 +1,10 @@
 body {
 	margin: 0;
+	font-family: 'Gill Sans MT';
 }
 /* for main page */
 .container {
-	height: 780px;
+	height: 820px;
 	width: 780px;
 	box-shadow : 1px 1px 7px 4px rgba(0, 0, 0, 0.2);
 	margin: 1% 20% 1% 20%;
@@ -20,8 +21,6 @@ body {
 	height: 110%;
 	display: flex;
 	margin-right: px;
-	
-
 }
 .ph {
 	display: flex;
@@ -34,7 +33,6 @@ body {
 }
 .age {
 	margin-top: -27px;
-
 }
 .phone {
 	margin: -1px;
@@ -42,14 +40,9 @@ body {
 .mail {
 	margin: -1px;
 }
-/* Position */
-.position_salary {
-	margin-top: 5%;
-	margin-left: 1%;
-}
 .headline {
 	margin-left: 7px;
-	color: lightgray;
+	color: rgb(170, 168, 168);
 }
 .main_hr {
 	border: none;
@@ -61,16 +54,12 @@ body {
 	
 }
 .position_name {
-	margin-left: 7px;
-	margin-top: -5px;
-}
-.position_informarion {
-	margin-top: -10px;
-	margin-left: 7px;
+	margin-top: -20px;
 }
 /* Education */
 .education {
 	margin-left: 1%;
+	margin-top: 50px;
 }
 .education_1 {
 	display: flex;
@@ -116,4 +105,18 @@ body {
 .language_pos {
 	padding-left: 20px;
 	margin-top: -1%;
+}
+/* About me */
+.About_me {
+	margin-top: 3%;
+	margin-left: 1%;
+}
+.about_me_p {
+	margin-left: 1%;
+	margin-top: -1%;
+}
+a.link {
+	
+			text-decoration: none;
+			color: rgb(103, 100, 100);	
 }
