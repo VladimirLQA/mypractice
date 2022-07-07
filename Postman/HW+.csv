@@ -1,0 +1,30 @@
+name,age,salary
+nAm,18,1
+AAAaaaa   _!@#$1234ФФвывавф?*()___+%ASDB,120,1000000
+na,18,1
+AAAaaaa   _!@#$1234ФФвывавф?*()___+%ASDB,18,1
+ baa,18,1
+aaaa ,18,1
+,18,1
+    ,18,1
+<script>alert('name')</script>,18,1
+<b>name</b>,18,1
+nAm,17,1
+nAm,121,1
+nAm,,1
+nAm,a! +,1
+nAm,true,1
+nAm,18.1,1
+nAm,-18,1
+nAm,0,1
+nAm,'18',1
+nAm,1e1,1
+nAm,18,0
+nAm,18,-1
+nAm,18,1.1
+nAm,18,10000001
+nAm,18,true
+nAm,18,1e1
+nAm,18,!@#$
+nAm,18,'1'
+
