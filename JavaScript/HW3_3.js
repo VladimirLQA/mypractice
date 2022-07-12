@@ -54,7 +54,7 @@ const enterprises = [
     }
 ]
 
-// 1
+//utils
 // const employeeCounterHelper = function(number) {
 //     lastNumber = number.toString().split('').pop();
 //     if(lastNumber && number) {
@@ -63,6 +63,28 @@ const enterprises = [
 //         else return `${number} - сотрудников`;
 //     }  else return "Нет сотрудников"
 // };
+
+const getNewId = function (company) {
+    let maxId = 0;
+    company.forEach(comp => {
+        if(maxId < comp.id) maxId = comp.id
+        if(comp.departments) {
+            comp.departments.forEach(dept => {
+                if(maxId < dept.id) maxId = comp.id
+            })
+        }
+    })
+    return maxId +1;
+}
+getNewId(enterprises);
+
+
+const getEnterprise = function (val) {
+    let enterprise = enterprises.find(el => el.id === val || el.name === val)
+    return enterprise ? enterprise : false
+}
+
+// 1. Вывести все предприятия и их отделы.Рядом указать количество сотрудников.Для предприятия посчитать сумму всех сотрудников во всех отделах.
 
 // const getStructure = function (company) {
 //      company.forEach(comp => {
@@ -81,19 +103,57 @@ const enterprises = [
 // }
 //getStructure(enterprises);
 
-//2
-const getEnterpriseByDepartment = function (value) {
-    let enterprise;
-    enterprises.forEach(ent => {
-        let department;
-        if (ent.departments) {
-            department = ent.departments.find(dept => {return dept.id === value || dept.name === value})
-        }
-        if(department) enterprise = ent;
+//2.Написать функцию, которая будет принимать 1 аргумент(id отдела или название отдела и возвращать название предприятия, к которому относится).
+
+// const getEnterpriseByDepartment = function (value) {
+//     let enterprise;
+//     enterprises.forEach(ent => {
+//         let department;
+//         if (ent.departments) {
+//             department = ent.departments.find(dept => {return dept.id === value || dept.name === value})
+//         }
+//         if(department) enterprise = ent;
+//     })
+//     return enterprise ? enterprise : `Нет организации с id == ${value} или именем == ${value}`;
+// };
+// console.log(getEnterpriseByDepartment(521));
+
+// 3. Написать функцию, которая будет добавлять предприятие.В качестве аргумента принимает название предприятия
+
+const addEnterprise = function (name) {
+    enterprises.push({
+        id: getNewId(enterprises),
+        name: name,
+        departments: []
     })
-    return enterprise ? enterprise : `Нет организации с id == ${value} или именем == ${value}`;
-};
-console.log(getEnterpriseByDepartment(521));
+}
+addEnterprise('Testers');
+
+// 4. Написать функцию, которая будет добавлять отдел в предприятие.В качестве аргумента принимает id предприятия, в которое будет добавлен отдел и название отдела.
+
+const addDepartment = function (entId, name, count = 0) {
+    const enterprise = getEnterprise(entId)
+    if (enterprise) enterprise.departments.push({
+        id: getNewId(enterprises),
+        name: name,
+        employees_count: count,
+    })
+}
+addDepartment(1, "QA", 20);
+// console.log(enterprises[3]);
+
+// 5. Написать функцию для редактирования названия предприятия.Принимает в качестве аргумента id предприятия и новое имя предприятия.
+const editEnterprise = function (val, name) {
+    const enterprise = getEnterprise(val)
+    if(enterprise) enterprise.name = name;
+    else throw new Error ('No such enterprise')
+}
+editEnterprise(101, '123123123')
+console.log(enterprises[3]);
+
+
+
+
 
 
 // Задания:
