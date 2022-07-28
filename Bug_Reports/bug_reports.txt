@@ -1,121 +1,112 @@
 Identifier:	1.01
 
-Summary: Form "Registration" field "Last Name" validation error when we enter 21 character 
+Summary: Validation error of "Last name" field in the "Registration" form when we enter into field 21 characters
 
 Severity:
 
 Priority:
 
-Environment:
+Environment: Microsoft Windows v.10.0.18362; Google Chrome v.103.0.5060.134 
 
 Precondition:
 Opened page ............
 
 STR: 
-	1. Click on the button "Sign up"
-	2. Field "Name" input "example"
-	3. Field "Last name" input "exampleexampleexample" (21 characters)
-	4. Click on the field "Email" 
+	1. Click on the "Sign up" button 
+	2. Input into the "Name" field: example
+	3. Input into the "Last name" field: exampleexampleexample (21 characters)
+	4. Click on the "Email" field 
 
 Result: 
 We continue registration
 
 Expected result:
-The "Last name" field frame shoud be highlighted in red and pop up an error: "Last name has to be from 2 to 20 characters long"
+The "Last name" field frame shoud be highlighted in red and pop-up an error: "Last name has to be from 2 to 20 characters long"
 
 Attachments: screenshot
 
-Reproducibility:
-
-Workaround:
+Reproducibility: always
 
 =========================================================
 
 Identifier:	1.02
 
-Summary: Error message is not displayed at the "Add an expense" popup on "Fuel expense" page when we add the same "Mileage" if it already exists
- 
+Summary: Error message is not displayed at the "Add an expense" pop-up on "Fuel expense" page when we add the same "Mileage" if it already exists
 
 Severity:
 
 Priority:
 
-Environment:
+Environment: Microsoft Windows v.10.0.18362; Google Chrome v.103.0.5060.134 
 
 Precondition:
 Opened page ................ and logged in user, 
 Already added at least one expense to car 
 
 STR: 
-	1. Click on the button "Fuel expenses"
-	2. Click on the button "Add an expense"
-	3. Enter into fild "Mileage" - the same mileage of the previous expense
-	4. Enter into filds ("Number of liters", "Total cost") value (5, 5) 
-	5. Click on the button "Add"
+	1. Click on the "Fuel expenses" button 
+	2. Click on the "Add an expense" button 
+	3. Enter into field "Mileage" - the same mileage of the previous expense
+	4. Enter into fields ("Number of liters", "Total cost") value (5, 5) 
+	5. Click on the "Add" button 
 
 Result: 
 A red box with no message is displayed at the top of the "Add Expense" popup.
 
 Expected result:
-Should be displayed an error message "New mileage must not be less or equal to previous expense value is 'your previous mileage' " at the top of the "Add Expense" popup 
+Should be displayed an error message "New mileage must not be less or equal to previous expense value is 'your previous mileage' " at the top of the "Add Expense" pop-up 
 
 Attachments: screenshot
 
-Reproducibility:
-
-Workaround:
+Reproducibility: always
 
 =========================================================
 
 Identifier:	1.03
 
-Summary: Error in the CSS related to the "Name" field in "Edit profile" popup
- 
+Summary: Error in the CSS related to the "Name" field in "Edit profile" pop-up
 
 Severity:
 
 Priority:
 
-Environment:
+Environment: Microsoft Windows v.10.0.18362; Google Chrome v.103.0.5060.134 
 
 Precondition:
 Opened page ............... and logged in user
 
 STR: 
-	1. Click on the button "Profile"
-	2. Click on the button "Edit profile"
+	1. Click on the "Profile" button 
+	2. Click on the "Edit profile" button 
 
 Result: 
-The "Name" field is out of frame "Edit profile" popup
+The "Name" field is out of frame "Edit profile" pop-up
 
 Expected result:
-The "Name" field is in of frame "Edit profile" popup
+The "Name" field is in of frame "Edit profile" pop-up
 
 Attachments: screenshot
 
-Reproducibility:
-
-Workaround:
+Reproducibility: always
 
 =========================================================
 
 Identifier:	1.04
 
-Summary: Invalid link of "Settings" button to move to settings at the Dropdown list of "My profile" button when we click on it
+Summary: Invalid redirect link of "Settings" button to move to settings at the dropdown list of "My profile" button when we click on it
 
 Severity:
 
 Priority:
 
-Environment:
+Environment: Microsoft Windows v.10.0.18362; Google Chrome v.103.0.5060.134 
 
 Precondition:
 Opened page ............... and logged in user
 
-
 STR: 
-	1. Click on the button "My profile" at the top-right corner
-	2. Click on the button " Settings"
+	1. Click on the "My profile" button at the top-right corner
+	2. Click on the "Settings" button 
 
 
 Result: 
@@ -126,9 +117,7 @@ User is redirecte to "https://................../panel/settings" page
 
 Attachments: screenshot
 
-Reproducibility:
-
-Workaround:
+Reproducibility: always
 
 ===========================================================================
 
@@ -144,7 +133,6 @@ Environment: Microsoft Windows v.10.0.18362.1256, Google Chrome v. 98.0.4758.82
 
 Precondition: Opened page https://askerweb.by/
 
-
 STR: 
 
 	1. Click on the link "SEO Promotion"
@@ -159,9 +147,7 @@ Inscription 'Our Clients' with checkbox is displayed in the logo block.
 
 Attachments: screenshot
 
-Reproducibility:
-
-Workaround:
+Reproducibility: always
 
 ===========================================================================
 
@@ -173,16 +159,15 @@ Severity: Medium
 
 Priority: Medium
 
-Environment: Microsoft Windows v.10.0.18362.1256, Google Chrome v. 98.0.4758.82
+Environment: Microsoft Windows v.10.0.18362.1256, Google Chrome v.98.0.4758.82
 
 Precondition: Opened page https://guitaa.com/
 
-
 STR: 
 
-	1. Click on the link "Practice Music"
+	1. Click on the "Practice Music" link 
 	2. Scrooll to "GUITAA song library"
-	3. Click on the image https://prnt.sc/26uftxc
+	3. Click on the "https://prnt.sc/26uftxc" image 
 
 Result: 
 Redirected to "Symfony exception" page with error  https://prnt.sc/26ufu61
@@ -192,6 +177,4 @@ Redirected to page with chords of song
 
 Attachments: https://prnt.sc/26ufu61 ; https://prnt.sc/26uftxc
 
-Reproducibility: 
-
-Workaround:
+Reproducibility: always
